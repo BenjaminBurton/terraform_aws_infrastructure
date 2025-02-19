@@ -10,3 +10,8 @@ terraform {
 provider "aws" {
   region = "us-east-1" # Change to your preferred AWS region
 }
+
+output "aws_region" {
+  description = "The AWS region in use"
+  value       = "us-east-1"
+}
